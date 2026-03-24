@@ -19,12 +19,12 @@ export default function BeforeAfterGallery({ onBookAppointment }: BeforeAfterGal
   ];
 
   return (
-    <section className="p-4 md:p-8 lg:p-12 bg-[#f1f7f7]">
+    <section className="p-4 md:p-8 lg:p-12 bg-[#fdf7fc]">
       <div className="max-w-6xl mx-auto">
         {/* Heading */}
         <div className="text-center mb-8">
-          <div className="text-[#72b1b1] text-sm md:text-base font-medium mb-2">
-            Tooth Story – Dental Clinic For All
+          <div className="text-[#964782] text-sm md:text-base font-medium mb-2">
+            Beaudent Dental Care
           </div>
           <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-4">
             Patient Success Stories
@@ -46,7 +46,7 @@ export default function BeforeAfterGallery({ onBookAppointment }: BeforeAfterGal
                 >
                   Your browser does not support the video tag.
                 </video>
-                <div className="absolute top-4 left-4 bg-[#72b1b1] text-white text-xs px-3 py-1 rounded-full backdrop-blur-sm opacity-90 font-bold z-10">
+                <div className="absolute top-4 left-4 bg-[#964782] text-white text-xs px-3 py-1 rounded-full backdrop-blur-sm opacity-90 font-bold z-10">
                   Patient Story {index + 1}
                 </div>
               </div>
@@ -56,25 +56,25 @@ export default function BeforeAfterGallery({ onBookAppointment }: BeforeAfterGal
         </div>
 
         {/* CTA Box */}
-        <div className="text-center bg-white p-6 md:p-8 rounded-xl shadow-lg mt-8 border border-[#72b1b1]/10">
+        <div className="text-center bg-white p-6 md:p-8 rounded-xl shadow-lg mt-8 border border-[#964782]/10">
           <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
-            Ready for Your <span className="text-[#72b1b1]">Smile Transformation?</span>
+            Ready for Your <span className="text-[#964782]">Smile Transformation?</span>
           </h3>
           <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-            Join hundreds of satisfied patients who have transformed their smiles with Dr. Nikunj Maniyar&apos;s expertise. Book your consultation today and take the first step towards your dream smile.
+            Join hundreds of satisfied patients who have transformed their smiles with Dr. Ankita Nagrani&apos;s expertise. Book your consultation today and take the first step towards your dream smile.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
               onClick={onBookAppointment}
-              className="bg-[#72b1b1] text-white px-8 py-3 rounded-lg font-bold text-lg hover:bg-[#5a8d8d] transition-colors"
+              className="bg-[#964782] text-white px-8 py-3 rounded-lg font-bold text-lg hover:bg-[#7a326a] transition-colors"
             >
               Book Consultation
             </button>
             <a
-              href="tel:+919726992969"
-              className="bg-[#2d3e40] text-white px-8 py-3 rounded-lg font-bold text-lg hover:bg-[#1a2526] transition-colors text-center"
+              href="tel:+918788469535"
+              className="bg-[#301b2a] text-white px-8 py-3 rounded-lg font-bold text-lg hover:bg-[#1f111b] transition-colors text-center"
             >
-              Call Now: +91 97269 92969
+              Call Now: +91 87884 69535
             </a>
           </div>
           <p className="text-sm text-gray-500 mt-4">

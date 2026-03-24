@@ -8,32 +8,32 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Tooth Story – Dental Clinic For All",
-  description: "Dr. Nikunj Maniyar (Orthodontist & Pedodontist | Invisalign Specialist). Located at Sunrise Park, Ahmedabad. Gold medalist specialist for adult and kids orthodontic care.",
-  keywords: "Dr. Nikunj Maniyar, Orthodontist, Pedodontist, Tooth Story, Invisalign Ahmedabad, Kids Braces, Junior Aligners",
-  authors: [{ name: "Dr. Nikunj Maniyar" }],
-  creator: "Tooth Story – Dental Clinic For All",
-  publisher: "Tooth Story – Dental Clinic For All",
+  title: "Beaudent Dental Care",
+  description: "Dr. Ankita Nagrani (Endodontist). Located at Baner, Pune. Specialist for endodontic, root canal, and laser dentistry care.",
+  keywords: "Dr. Ankita Nagrani, Endodontist, Beaudent Dental Care, Pune, Root Canal, Laser Dentistry, 3D Scanning",
+  authors: [{ name: "Dr. Ankita Nagrani" }],
+  creator: "Beaudent Dental Care",
+  publisher: "Beaudent Dental Care",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://tooth-story.vercel.app'),
+  metadataBase: new URL('https://beaudent.in'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: "Tooth Story | Expert Invisalign & Kids Orthodontic Care",
-    description: "Dr. Nikunj Maniyar - 6+ Years Experience. Sunrise Park, Ahmedabad.",
-    url: 'https://tooth-story.vercel.app/',
-    siteName: "Tooth Story – Dental Clinic For All",
+    title: "Beaudent Dental Care | Expert Endodontist & Laser Dentistry",
+    description: "Dr. Ankita Nagrani - 8-10 Years Experience. Baner, Pune.",
+    url: 'https://beaudent.in/',
+    siteName: "Beaudent Dental Care",
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: "Tooth Story – Dental Clinic For All",
+        alt: "Beaudent Dental Care",
       },
     ],
     locale: 'en_IN',
@@ -41,8 +41,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Tooth Story – Dental Clinic For All",
-    description: "Expert Invisalign & Kids Orthodontic Care in Ahmedabad",
+    title: "Beaudent Dental Care",
+    description: "Expert Endodontist & Laser Dentistry in Pune",
     images: ['/og-image.jpg'],
   },
   robots: {
@@ -68,7 +68,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#485b51" />
+        <meta name="theme-color" content="#5d2350" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.json" />
       </head>

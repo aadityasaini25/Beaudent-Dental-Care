@@ -6,43 +6,17 @@ interface DoctorProfileProps {
 
 const doctors = [
   {
-    name: "Dr. Nikunj Maniyar",
-    title: "BDS, MDS – Aligner Specialist",
-    image: "/images/doctor/Dr. NIKUNJ.jpeg",
-    description: "Dr. Nikunj Maniyar is a Gold Medalist Orthodontist and a certified Invisalign provider, specializing in both adult and pediatric orthodontics. With over 6 years of experience, he brings a unique combination of clinical excellence and a gentle, patient-focused approach.",
+    name: "Dr. Ankita Nagrani",
+    title: "Endodontist",
+    image: "/images/doctor/Dr. Ankita Nagrani.png",
+    description: "Dr. Ankita Nagrani is an expert Endodontist with 8-10 years of experience, specializing in root canals, laser dentistry, and advanced 3D scanning. She is committed to providing painless, personalized dental care.",
     highlights: [
-      "Gold Medalist in-house Orthodontist",
-      "Certified Invisalign & Junior Aligners Specialist",
-      "Expertise in Kids Expanders & Early Orthodontics",
-      "Recognized for Excellence with Multiple Awards"
+      "Expert Endodontist",
+      "8-10 Years of Clinical Experience",
+      "Laser Dentistry Specialist",
+      "Advanced 3D Technology Integration"
     ],
-    footer: "Having special interests in Kids Orthodontics, he ensures a calm and positive environment for children, making their dental journey comfortable and fear-free."
-  },
-  {
-    name: "Dr. Shruti Thakkar",
-    title: "MDS – Pediatric & Preventive Dentist",
-    image: "/images/doctor/Dr. Shruti Thakkar.jpeg",
-    description: "Dr. Shruti is a dedicated and highly motivated Pediatric and Preventive Dentist with a passion for enhancing children's oral health. She believes in providing an experience through customized educational programs for Small Wonders and Teens.",
-    highlights: [
-      "Academic Proficiency at Rajiv Gandhi University of Health Sciences (4th Rank)",
-      "Certificate for Academic Proficiency at Bapuji Dental College (1st Rank)",
-      "Multiple awards for paper presentations at national conferences",
-      "MDS in Pediatric and Preventive Dentistry"
-    ],
-    footer: "Her exceptional expertise and state-of-the-art techniques ensure every child leaves our clinic excited for their next visit."
-  },
-  {
-    name: "Dr. Priyanka Maniyar",
-    title: "BDS – Root Canal & Smile Design Specialist",
-    image: "/images/doctor/Dr. Priyanka Maniyar.jpeg",
-    description: "Dr. Priyanka is a distinguished dentist, recognized for expertise in root canal therapy and the artistry of smile design. With an unwavering dedication to perfection and a flair for innovation, she integrates advanced dental techniques to achieve outstanding outcomes.",
-    highlights: [
-      "Expert in Root Canal Therapy",
-      "Artistry of Smile Design Specialist",
-      "Advanced Dental Techniques Integration",
-      "Dedicated to personalized and world-class care"
-    ],
-    footer: "She ensures each patient receives world-class treatment through her meticulous attention to detail."
+    footer: "Her exceptional expertise ensures every patient receives world-class treatment through meticulous attention to detail."
   }
 ];
 
@@ -51,9 +25,9 @@ export default function DoctorProfile({ onBookAppointment }: DoctorProfileProps)
     <section className="relative bg-white py-20 md:py-32 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="text-center mb-12 max-w-3xl mx-auto">
-          <p className="text-[#72b1b1] font-semibold text-sm uppercase tracking-[0.2em] mb-2">Our Specialists</p>
+          <p className="text-[#964782] font-semibold text-sm uppercase tracking-[0.2em] mb-2">Our Specialists</p>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight mb-4">Our Specialized and Experienced Dentist</h2>
-          <div className="w-16 h-0.5 bg-[#72b1b1] rounded-full mx-auto" />
+          <div className="w-16 h-0.5 bg-[#964782] rounded-full mx-auto" />
           <p className="mt-4 text-gray-600 text-sm md:text-base">
             Our expert team is dedicated to providing premium dental care with a personalized approach.
           </p>
@@ -77,7 +51,7 @@ export default function DoctorProfile({ onBookAppointment }: DoctorProfileProps)
                   <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2 tracking-tight">
                     {doctor.name}
                   </h3>
-                  <p className="text-[#72b1b1] font-semibold text-sm md:text-base uppercase tracking-[0.2em] mb-4">
+                  <p className="text-[#964782] font-semibold text-sm md:text-base uppercase tracking-[0.2em] mb-4">
                     {doctor.title}
                   </p>
                   <div className="text-gray-600 text-sm md:text-base leading-relaxed space-y-4">
@@ -85,7 +59,7 @@ export default function DoctorProfile({ onBookAppointment }: DoctorProfileProps)
                     <ul className="space-y-2">
                       {doctor.highlights.map((highlight, hIndex) => (
                         <li key={hIndex} className="flex items-start gap-2 justify-center md:justify-start">
-                          <span className="text-[#72b1b1] mt-1 shrink-0">✓</span>
+                          <span className="text-[#964782] mt-1 shrink-0">✓</span>
                           <span>{highlight}</span>
                         </li>
                       ))}
@@ -101,7 +75,7 @@ export default function DoctorProfile({ onBookAppointment }: DoctorProfileProps)
         <div className="mt-20 flex justify-center">
           <button
             onClick={onBookAppointment}
-            className="bg-[#72b1b1] text-white px-10 py-4 rounded-xl font-semibold text-base hover:bg-[#5a8d8d] transition-colors shadow-lg hover:shadow-xl"
+            className="bg-[#964782] text-white px-10 py-4 rounded-xl font-semibold text-base hover:bg-[#7a326a] transition-colors shadow-lg hover:shadow-xl"
           >
             Book Your Free Smile Consultation
           </button>

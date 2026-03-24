@@ -2,42 +2,42 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#2d3e40] border-t border-white/5 pt-8 pb-4 text-gray-300">
+    <footer className="bg-[#301b2a] border-t border-white/5 pt-8 pb-4 text-gray-300">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="text-center mb-8">
-          <div className="bg-white p-2 rounded-xl inline-block mb-4 shadow-xl">
+          <div className="bg-white p-3 md:p-4 rounded-xl inline-block mb-4 shadow-xl">
             <Image
-              src="/images/logo.webp"
-              alt="Tooth Story – Dental Clinic For All"
-              width={100}
-              height={25}
-              className="h-auto opacity-100"
+              src="/images/logo.svg"
+              alt="Beaudent Dental Care"
+              width={160}
+              height={60}
+              className="h-10 md:h-14 w-auto opacity-100"
             />
           </div>
           <p className="text-gray-400 max-w-2xl mx-auto font-light leading-relaxed text-xs md:text-sm">
-            Tooth Story: Specialist Orthodontic & Pediatric Dental Care. Premium Invisalign provider and Kids dental specialists in Ahmedabad.
+            Beaudent Dental Care: Premium Endodontist and Laser dentistry specialists in Pune.
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-6 text-center md:text-left mb-8">
           <div className="space-y-2">
             <h3 className="font-bold text-white text-base border-b border-gray-800 pb-1">Contact Us</h3>
             <div className="space-y-1 mt-2">
-              <a href="tel:+919023523178" className="block text-[#72b1b1] font-bold text-lg hover:scale-105 transition-transform inline-block">+91 90235 23178</a>
-              <p className="text-gray-300 font-medium text-xs">9023523178</p>
-              <p className="text-gray-300 font-medium text-xs">Tooth Story Dental Clinic</p>
-              <a href="mailto:info@toothstory.co.in" className="text-xs hover:text-[#72b1b1] transition-colors block">info@toothstory.co.in</a>
+              <a href="tel:+918788469535" className="block text-[#964782] font-bold text-lg hover:scale-105 transition-transform inline-block">+91 87884 69535</a>
+              <p className="text-gray-300 font-medium text-xs">+91 87883 05936</p>
+              <p className="text-gray-300 font-medium text-xs">Beaudent Dental Care</p>
+              <a href="mailto:drankitanagrani@gmail.com" className="text-xs hover:text-[#964782] transition-colors block">drankitanagrani@gmail.com</a>
             </div>
           </div>
 
           <div className="space-y-2">
             <h3 className="font-bold text-white text-base border-b border-gray-800 pb-1">Clinic Hours</h3>
             <div className="flex items-start justify-center md:justify-start gap-2 mt-2">
-              <span className="text-[#72b1b1] text-lg">🕒</span>
+              <span className="text-[#964782] text-lg">🕒</span>
               <div className="text-gray-300 space-y-0.5 text-xs">
                 <p className="font-bold">Mon–Sat</p>
-                <p>10:30 AM – 8:30 PM</p>
+                <p>10:00 AM – 8:00 PM</p>
                 <p className="font-bold mt-1">Sunday</p>
-                <p>By Appointment Only</p>
+                <p>Closed</p>
               </div>
             </div>
           </div>
@@ -45,17 +45,17 @@ export default function Footer() {
           <div className="space-y-2">
             <h3 className="font-bold text-white text-base border-b border-gray-800 pb-1">Our Location</h3>
             <a
-              href="https://maps.app.goo.gl/ZkrPk6MmNcuwAn6K9"
+              href="https://maps.app.goo.gl/GmaTNebnQKJXhK4k7"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-white transition-all group block text-xs mt-2"
             >
               <div className="flex items-start justify-center md:justify-start gap-2">
                 <span className="text-xl">📍</span>
-                <span className="text-gray-300 leading-relaxed group-hover:text-[#72b1b1] transition-colors">
-                  House No. 8, 1st Floor, Sunrise Park,<br />
-                  Next to Sales India Showroom,<br />
-                  Drive-In Road, Gurukul, Ahmedabad
+                <span className="text-gray-300 leading-relaxed group-hover:text-[#964782] transition-colors">
+                  F-18, First Floor, ABIL Imperial Commercial Spaces,<br />
+                  Rohan Seher Lane, Pancard Club Road,<br />
+                  Baner, Pune, Maharashtra – 411045
                 </span>
               </div>
             </a>
@@ -82,7 +82,7 @@ export default function Footer() {
 
           <div className="bg-gray-100 rounded-xl overflow-hidden h-[160px] shadow-inner border border-gray-200">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29371.245939171655!2d72.50004623631145!3d23.045581809035593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e854e927381b5%3A0xed786f789620a502!2sTooth%20Story%20-%20Dental%20Clinic%20For%20All%20%7C%20Braces%20%7C%20Invisalign%20%7C%20Aligners%20%7C%20Kids%20Dentist%20%7C%20Implants!5e0!3m2!1sen!2sin!4v1773687425279!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.3932723318726!2d73.7730753!3d18.556300399999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfe4ce6a472b%3A0xc67a4e2abe2628f7!2sBeaudent%20%7C%20Dentist%20in%20Baner%20%7C%20Dental%20Clinic%20in%20Baner!5e0!3m2!1sen!2sin!4v1774363584671!5m2!1sen!2sin"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -96,7 +96,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-4 text-center text-gray-500 text-[10px] sm:text-xs">
-          <p>&copy; {new Date().getFullYear()} Tooth Story – Dental Clinic For All. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Beaudent Dental Care. All rights reserved.</p>
         </div>
       </div>
     </footer>

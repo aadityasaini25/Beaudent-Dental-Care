@@ -1,72 +1,72 @@
 export default function ServiceHighlights() {
   const serviceData = [
     {
-      title: "Invisalign & Clear Aligners",
-      image: "/images/ortho/invisalign.png",
+      title: "Root Canal Treatment",
+      image: "/images/ortho/root_canal_3d.png",
       description:
-        "The world's most advanced clear aligner system. Get a perfect smile without wires or brackets.",
+        "Single-visit painless root canal therapy using advanced rotary endodontics and 3D precision.",
       benefits: [
-        "Virtually invisible treatment",
-        "Removable & easy to clean",
-        "iTero Digital Scanning",
-        "Starting from ₹90,000",
+        "Painless & fast treatment",
+        "Preserves natural tooth structure",
+        "Advanced 3D imaging integration",
+        "Prevents severe infections",
       ],
     },
     {
-      title: "Junior Aligners for Kids",
-      image: "/images/ortho/junior.png",
+      title: "Re-Root Canal Treatment",
+      image: "/images/ortho/re_root_canal_3d.png",
       description:
-        "Specialized clear aligner treatment designed specifically for the unique needs of growing children.",
+        "Expert revision of failed or complex root canals using microscopic endodontic techniques for guaranteed success.",
       benefits: [
-        "Designed for kids & teens",
-        "Comfortable & wire-free",
-        "Corrects overcrowding & gaps",
-        "Gentle on young teeth",
+        "Resolves persistent pain",
+        "State-of-the-art sterilization",
+        "Expert endodontic handling",
+        "High success rate",
       ],
     },
     {
-      title: "Kids Jaw Expanders",
-      image: "/images/ortho/expander_new_3d.png",
+      title: "Laser Dentistry",
+      image: "/images/ortho/laser_dentistry_3d.png",
       description:
-        "Early intervention to create space and guide jaw growth for a healthier, straighter smile.",
+        "Minimally invasive laser treatments for gums, root canals, and teeth whitening with superior comfort.",
       benefits: [
-        "Prevent future extractions",
-        "Improve speech and breathing",
-        "Correct crossbites early",
-        "Painless orthopedic growth",
+        "No drills or needles needed",
+        "Faster healing and recovery",
+        "Reduced bleeding & swelling",
+        "Highly precise treatments",
       ],
     },
     {
-      title: "Adult Orthodontics",
-      image: "/images/ortho/braces.png",
+      title: "Oral Surgery",
+      image: "/images/ortho/oral_surgery_3d.png",
       description:
-        "Customized orthodontic solutions for adults who want to enhance their smile and oral health.",
+        "Safe and painless minor oral surgeries including precise wisdom tooth extractions.",
       benefits: [
-        "Ceramic & Lingual braces",
-        "Metal self-ligating braces",
-        "Smile redesign & alignment",
-        "Long-term stability planning",
+        "Painless extractions",
+        "Expert surgical care",
+        "Wisdom teeth removal",
+        "Fast recovery protocols",
       ],
     },
   ];
 
   return (
-    <section className="relative bg-[#2d3e40] text-white py-20 md:py-28 px-4 md:px-8 lg:px-12">
+    <section className="relative bg-[#301b2a] text-white py-20 md:py-28 px-4 md:px-8 lg:px-12">
       <div className="max-w-7xl mx-auto">
-        <p className="text-[#72b1b1] font-semibold text-sm uppercase tracking-[0.2em] mb-2">Our Services</p>
+        <p className="text-[#964782] font-semibold text-sm uppercase tracking-[0.2em] mb-2">Our Services</p>
         <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white mb-4">
-          Advanced Orthodontics
+          Advanced Endodontics & Laser Dentistry
         </h2>
-        <div className="w-16 h-0.5 bg-[#72b1b1] rounded-full mb-4" />
+        <div className="w-16 h-0.5 bg-[#964782] rounded-full mb-4" />
         <p className="text-gray-300 max-w-2xl mb-14">
-          From Invisalign and Junior Aligners to early jaw expansion — we specialize in creating beautiful smiles for all ages with a fully digital workflow.
+          From painless root canals to advanced oral surgeries — we specialize in preserving your natural smile using state-of-the-art microscopic and laser technology.
         </p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {serviceData.map((service, index) => (
             <div
               key={index}
-              className={`bg-white/5 border border-white/10 p-6 rounded-[28px] flex flex-col hover:border-[#72b1b1]/50 hover:bg-white/10 transition-all duration-500 hover-lift fade-up stagger-${index + 1} group border-beam`}
+              className={`bg-white/5 border border-white/10 p-6 rounded-[28px] flex flex-col hover:border-[#964782]/50 hover:bg-white/10 transition-all duration-500 hover-lift fade-up stagger-${index + 1} group border-beam`}
             >
               <div className="relative rounded-2xl mb-6 aspect-[4/3] flex items-center justify-center overflow-hidden bg-white/5 border border-slate-600/30 p-4 shadow-inner">
                 <img
@@ -74,14 +74,14 @@ export default function ServiceHighlights() {
                   alt={service.title}
                   className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-tr from-[#72b1b1]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute inset-0 bg-gradient-to-tr from-[#964782]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
-              <h3 className="font-bold mb-3 text-lg text-white group-hover:text-[#72b1b1] transition-colors">{service.title}</h3>
+              <h3 className="font-bold mb-3 text-lg text-white group-hover:text-[#964782] transition-colors">{service.title}</h3>
               <p className="text-[14px] text-gray-400 leading-relaxed mb-6 flex-grow">{service.description}</p>
               <ul className="space-y-3 text-[12px] text-slate-300">
                 {service.benefits.map((b, i) => (
                   <li key={i} className="flex items-start gap-2 group/item">
-                    <span className="text-[#72b1b1] mt-1 shrink-0 w-1.5 h-1.5 rounded-full bg-[#72b1b1] group-hover/item:scale-125 transition-transform" />
+                    <span className="text-[#964782] mt-1 shrink-0 w-1.5 h-1.5 rounded-full bg-[#964782] group-hover/item:scale-125 transition-transform" />
                     <span>{b}</span>
                   </li>
                 ))}

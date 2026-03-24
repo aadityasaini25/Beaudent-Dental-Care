@@ -7,29 +7,29 @@ export default function FAQSection() {
 
   const faqs = [
     {
-      question: "How do Invisalign aligners work?",
+      question: "Is a root canal treatment painful?",
       answer:
-        "Invisalign uses a series of custom-made, clear plastic trays to gradually shift your teeth into the desired position. Each set is worn for about 1-2 weeks before moving to the next in the series.",
+        "Not at all. With modern anesthesia and our advanced endodontic techniques, root canal treatments are virtually painless. Most patients report feeling little to no discomfort during the procedure.",
     },
     {
-      question: "What is the right age for a child's first orthodontic evaluation?",
+      question: "How many visits does a root canal take?",
       answer:
-        "The American Association of Orthodontists recommends a first check-up by age 7. Early evaluation allows us to detect potential issues and intervene at the optimal time for the best results.",
+        "Thanks to our state-of-the-art technology, we successfully perform single-visit root canal treatments in most cases. Only highly complex cases may require a second visit to ensure complete healing.",
     },
     {
-      question: "How long will my orthodontic treatment take?",
+      question: "What is a Re-Root Canal (Endodontic Retreatment)?",
       answer:
-        "Treatment duration varies based on the complexity of the case. On average, Invisalign or braces treatment takes between 12 to 24 months, though some minor corrections can be completed in as little as 6 months.",
+        "If a previously treated tooth fails to heal or gets newly infected, we can save it with a re-root canal. We carefully remove the old filling, clean the canals under a microscope, and precision-seal the tooth.",
     },
     {
-      question: "Can I eat normally with braces or aligners?",
+      question: "What are the benefits of Laser Dentistry?",
       answer:
-        "With Invisalign, you remove the trays to eat, so there are no dietary restrictions. With traditional braces, we recommend avoiding very hard, sticky, or crunchy foods to prevent damage to the brackets and wires.",
+        "Laser dentistry is minimally invasive, highly precise, and extremely comfortable. It eliminates the need for drills in many procedures, leading to less bleeding, faster healing, and a stress-free experience.",
     },
     {
-      question: "Are clear aligners as effective as traditional metal braces?",
+      question: "How do I know if I need a root canal?",
       answer:
-        "Yes, for most cases, modern clear aligners are just as effective as traditional braces. During your consultation, we will determine which option is best suited for your specific dental needs.",
+        "Common signs include severe spontaneous toothache, prolonged sensitivity to heat or cold, swollen or tender gums, and pain when chewing. Please book a consultation immediately if you experience these symptoms.",
     }
   ];
 
@@ -49,16 +49,16 @@ export default function FAQSection() {
             <div key={index} className="card !p-0 overflow-hidden">
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full p-6 md:p-8 text-left font-bold hover:bg-emerald-50 transition-colors flex justify-between items-center group"
+                className="w-full p-6 md:p-8 text-left font-bold hover:bg-pink-50 transition-colors flex justify-between items-center group"
               >
-                <span className="flex-grow pr-4 text-lg md:text-xl text-gray-800 group-hover:text-[#485b51] transition-colors">{faq.question}</span>
-                <span className={`w-8 h-8 rounded-full border border-emerald-100 flex items-center justify-center text-[#485b51] transform transition-transform duration-300 ${openFAQ === index ? 'rotate-180 bg-[#485b51] text-white' : ''}`}>
+                <span className="flex-grow pr-4 text-lg md:text-xl text-gray-800 group-hover:text-[#5d2350] transition-colors">{faq.question}</span>
+                <span className={`w-8 h-8 rounded-full border border-pink-100 flex items-center justify-center text-[#5d2350] transform transition-transform duration-300 ${openFAQ === index ? 'rotate-180 bg-[#5d2350] text-white' : ''}`}>
                   ▼
                 </span>
               </button>
               {openFAQ === index && (
                 <div className="px-6 pb-8 md:px-8 md:pb-10 bg-white">
-                  <div className="w-full h-px bg-emerald-50 mb-8"></div>
+                  <div className="w-full h-px bg-pink-50 mb-8"></div>
                   <p className="text-gray-600 font-light text-lg md:text-xl leading-relaxed">{faq.answer}</p>
                 </div>
               )}

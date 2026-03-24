@@ -3,35 +3,35 @@ import Image from "next/image";
 export default function GoogleReviews() {
   const reviews = [
     {
-      name: "Nikunj Pujara",
-      initials: "NP",
+      name: "Krishna",
+      initials: "K",
       date: "Recent",
-      review: "Great experience at Tooth Story dental clinic. Dr. Nikunj and Dr. Shruti are extremely knowledgeable and skilled. The clinic is welcoming, and the treatment results were excellent. I recommend everyone to visit this place for any dental concerns."
+      review: "I recently visited Beaudent Dental Clinic for my root canal treatment, and I am extremely satisfied with the experience. The doctor explained the entire procedure in a very simple and clear way, which reduced my fear completely. The treatment was almost painless and completed very smoothly. The clinic is clean, hygienic, and well-equipped with modern technology. The staff is also very supportive and polite. Highly recommended for anyone looking for safe and comfortable root canal treatment."
     },
     {
-      name: "Priyanka Shah",
-      initials: "PS",
+      name: "Shruti Sapte",
+      initials: "SS",
       date: "Recent",
-      review: "Wonderful experience, the doctor there was so kind and gentle to me. Also he did my treatment without any type of pain, also the work he did was flawless. Best Environment and positive vibe in clinic and also both doctors are good."
+      review: "I choose Beaudent Dental Clinic for laser teeth whitening after searching for a good dentist in Baner. The entire process was smooth and comfortable. I could see a noticeable difference in just one session. The doctor was very professional and guided me properly about aftercare. Totally worth it!"
     },
     {
-      name: "Utsav",
-      initials: "UT",
+      name: "Mahesh Jagave",
+      initials: "MJ",
       date: "Recent",
-      review: "Best dental clinic in Vastrapur area. Very happy with Dr Nikunj for my ongoing braces treatment. His expertise & personalized approach have made the experience comfortable and enjoyable. The entire team is friendly and professional."
+      review: "Very nice experience. Dr. Ankita ma’am is gentle and caring. The treatment was done properly and I did not feel much pain. The clinic is clean and the team is polite. I would definitely visit again if needed."
     },
     {
-      name: "Sangeeta Rai",
-      initials: "SR",
+      name: "Shivangi Jadhav",
+      initials: "SJ",
       date: "Recent",
-      review: "I visited Tooth Story a week ago & had an excellent experience. The treatment was smooth & completely painless, & my dental problems are fully resolved. Doctors are highly skilled & incredibly friendly, which made the whole process very comfortable."
+      review: "Beaudent Dental Clinic is an excellent dental clinic in Baner for root canal treatment. I was very nervous initially, but the doctor made me feel comfortable throughout the process. The treatment was quick, painless, and well-managed. The hygiene standards and friendly staff make this clinic highly recommendable for anyone in Baner."
     }
   ];
 
   return (
     <section className="py-20 md:py-32 px-4 md:px-8 lg:px-12 bg-gray-50 border-t border-gray-100">
       <div className="max-w-7xl mx-auto">
-        <p className="text-[#485b51] font-semibold text-sm uppercase tracking-[0.2em] mb-2">Testimonials</p>
+        <p className="text-[#5d2350] font-semibold text-sm uppercase tracking-[0.2em] mb-2">Testimonials</p>
         <div className="flex flex-wrap items-center gap-4 mb-8">
           <Image
             src="/images/google.png"
@@ -48,7 +48,7 @@ export default function GoogleReviews() {
           {reviews.map((review, index) => (
             <div key={index} className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100 flex flex-col h-full">
               <div className="flex items-start gap-4 mb-6">
-                <div className="w-12 h-12 text-white rounded-full flex items-center justify-center font-bold text-lg bg-[#485b51]">
+                <div className="w-12 h-12 text-white rounded-full flex items-center justify-center font-bold text-lg bg-[#5d2350]">
                   {review.initials}
                 </div>
                 <div>
