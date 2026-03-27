@@ -2,7 +2,11 @@
 
 import { useState } from 'react';
 
-export default function FAQSection() {
+interface FAQSectionProps {
+  onBookAppointment: () => void;
+}
+
+export default function FAQSection({ onBookAppointment }: FAQSectionProps) {
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);
 
   const faqs = [
@@ -14,7 +18,7 @@ export default function FAQSection() {
     {
       question: "How long does Invisalign treatment take?",
       answer:
-        "Treatment time varies depending on the complexity of your case, but most patients achieve their dream smile in 6 to 18 months. You'll see noticeable progress in just a few weeks!",
+        "Personalized treatment duration (usually 6–18 months) depending on the complexity of your case. You'll see noticeable progress in just a few weeks!",
     },
     {
       question: "Are aligners more comfortable than braces?",
@@ -38,7 +42,7 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="py-20 md:py-32 px-4 md:px-8 bg-white">
+    <section className="py-20 md:py-32 px-4 md:px-8 bg-white" id="faq">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 tracking-tight text-gray-900">
           Frequently Asked <span className="text-gradient-gold">Questions</span>
@@ -46,7 +50,7 @@ export default function FAQSection() {
 
         <div className="space-y-6">
           {faqs.map((faq, index) => (
-            <div key={index} className="card !p-0 overflow-hidden">
+            <div key={index} className="card !p-0 overflow-hidden border border-pink-50">
               <button
                 onClick={() => toggleFAQ(index)}
                 className="w-full p-6 md:p-8 text-left font-bold hover:bg-pink-50 transition-colors flex justify-between items-center group"
@@ -59,7 +63,16 @@ export default function FAQSection() {
               {openFAQ === index && (
                 <div className="px-6 pb-8 md:px-8 md:pb-10 bg-white">
                   <div className="w-full h-px bg-pink-50 mb-8"></div>
-                  <p className="text-gray-600 font-light text-lg md:text-xl leading-relaxed">{faq.answer}</p>
+                  <p className="text-gray-600 font-light text-lg md:text-xl leading-relaxed mb-8">{faq.answer}</p>
+                  <button
+                    onClick={onBookAppointment}
+                    className="inline-flex items-center gap-2 text-[#964782] font-bold text-lg hover:gap-3 transition-all"
+                  >
+                    Book Free Smile Scan
+                    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                  </button>
                 </div>
               )}
             </div>

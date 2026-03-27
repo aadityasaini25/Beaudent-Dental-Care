@@ -18,16 +18,16 @@ export default function HeroSection({ onBookAppointment }: HeroSectionProps) {
         {/* Invisalign Offer Banner */}
         <div className="inline-flex flex-col items-center mb-10 px-6 py-4 rounded-[28px] bg-white/70 backdrop-blur-xl border border-pink-100/50 shadow-xl shadow-pink-500/5 stagger-1">
           <div className="flex items-center gap-2 mb-2">
-            <div className="w-8 h-8 rounded-full bg-gradient-to-br from-pink-50 to-white flex items-center justify-center border border-pink-100 shadow-sm">
-              <span className="text-pink-500 text-xs">✨</span>
+            <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#964782] to-white flex items-center justify-center border border-pink-100 shadow-sm">
+              <span className="text-[#964782] text-xs">✨</span>
             </div>
-            <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-gray-400">Limited Period Offer</span>
+            <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-gray-400">Limited Time Offer</span>
           </div>
           <div className="text-xl md:text-2xl font-bold tracking-tight text-gray-900 mb-1">
-            Upto <span className="text-gradient-pink">20% OFF</span> on Invisalign & Implants
+            Up to <span className="text-[#964782]">20% OFF</span> on Invisalign Treatment
           </div>
-          <div className="flex items-center gap-3 text-xs text-gray-500 font-medium">
-            <p>Implants from <span className="text-[#964782] font-bold">₹40,000*</span></p>
+          <div className="flex items-center gap-3 text-xs md:text-sm text-gray-600 font-medium">
+            <p>+ FREE 3D Smile Scan <span className="text-[#964782] font-bold">(Worth ₹5000)</span></p>
           </div>
         </div>
 
@@ -79,7 +79,7 @@ export default function HeroSection({ onBookAppointment }: HeroSectionProps) {
               onClick={onBookAppointment}
               className="w-full bg-[#301b2a] text-white px-6 py-5 rounded-2xl text-base font-bold hover:bg-[#1f111b] transition-all hover:shadow-xl hover:-translate-y-1 active:scale-95"
             >
-              Get Your Smile Simulation
+              Claim Offer Now
             </button>
           </div>
         </div>
@@ -90,7 +90,7 @@ export default function HeroSection({ onBookAppointment }: HeroSectionProps) {
           onClick={onBookAppointment}
           className="bg-[#964782] text-white py-4 px-12 rounded-2xl font-bold text-lg shadow-xl shadow-pink-500/20 hover:bg-[#7a326a] transition-all hover:scale-105 active:scale-95 md:min-w-[240px]"
         >
-          Book Appointment
+          Book Free Smile Scan
         </button>
         <a
           href="tel:+918788469535"

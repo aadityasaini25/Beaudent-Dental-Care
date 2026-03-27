@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
+import OfferSection from "@/components/OfferSection";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import DoctorProfile from "@/components/DoctorProfile";
 import ServiceHighlights from "@/components/ServiceHighlights";
@@ -107,10 +108,11 @@ export default function Home() {
       <div className="relative z-10">
         <Header onBookAppointment={openPopup} />
         <HeroSection onBookAppointment={openPopup} />
+        <OfferSection onBookAppointment={openPopup} />
         <WhyChooseUs />
         <DoctorProfile onBookAppointment={openPopup} />
         <ServiceHighlights />
-        <FAQSection />
+        <FAQSection onBookAppointment={openPopup} />
         <ClinicPhotos onBookAppointment={openPopup} />
         <GoogleReviews />
         <CTABox onBookAppointment={openPopup} />

@@ -16,7 +16,7 @@ export default function ServiceHighlights() {
       title: "Re-Root Canal Treatment",
       image: "/images/ortho/re_root_canal_3d.png",
       description:
-        "Expert revision of failed or complex root canals using microscopic endodontic techniques for guaranteed success.",
+        "Expert revision of failed or complex root canals using microscopic endodontic techniques for high success rate with advanced technology.",
       benefits: [
         "Resolves persistent pain",
         "State-of-the-art sterilization",

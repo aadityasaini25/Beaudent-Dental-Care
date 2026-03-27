@@ -36,8 +36,8 @@ export default function StickyCTA({ isVisible, onBookAppointment }: StickyCtaPro
       </button>
       <div className="flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="text-center md:text-left">
-          <h3 className="font-bold text-xl text-gray-900 mb-1">Transform Your Smile Today</h3>
-          <p className="text-gray-600 font-light">Specialist Consultation & Digital Scan</p>
+          <h3 className="font-bold text-xl text-gray-900 mb-1">🎉 Free Smile Scan Worth ₹5000</h3>
+          <p className="text-[#964782] font-bold">Limited Time Invisalign Offer – Book Now</p>
         </div>
         <div className="flex gap-4 w-full md:w-auto">
           <button
