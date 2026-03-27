@@ -7,29 +7,29 @@ export default function FAQSection() {
 
   const faqs = [
     {
-      question: "Is a root canal treatment painful?",
+      question: "What are Clear Aligners (Invisalign)?",
       answer:
-        "Not at all. With modern anesthesia and our advanced endodontic techniques, root canal treatments are virtually painless. Most patients report feeling little to no discomfort during the procedure.",
+        "Clear aligners are a modern, nearly invisible alternative to traditional braces. They use a series of custom-made, removable plastic trays to gradually straighten your teeth without any wires or brackets.",
     },
     {
-      question: "How many visits does a root canal take?",
+      question: "How long does Invisalign treatment take?",
       answer:
-        "Thanks to our state-of-the-art technology, we successfully perform single-visit root canal treatments in most cases. Only highly complex cases may require a second visit to ensure complete healing.",
+        "Treatment time varies depending on the complexity of your case, but most patients achieve their dream smile in 6 to 18 months. You'll see noticeable progress in just a few weeks!",
     },
     {
-      question: "What is a Re-Root Canal (Endodontic Retreatment)?",
+      question: "Are aligners more comfortable than braces?",
       answer:
-        "If a previously treated tooth fails to heal or gets newly infected, we can save it with a re-root canal. We carefully remove the old filling, clean the canals under a microscope, and precision-seal the tooth.",
+        "Yes! Aligners are made of smooth, BPA-free plastic, so there are no sharp metal parts to irritate your mouth. Plus, they're removable, making it easy to eat, brush, and floss normally.",
     },
     {
-      question: "What are the benefits of Laser Dentistry?",
+      question: "How many hours a day should I wear my aligners?",
       answer:
-        "Laser dentistry is minimally invasive, highly precise, and extremely comfortable. It eliminates the need for drills in many procedures, leading to less bleeding, faster healing, and a stress-free experience.",
+        "For the best results, you should wear your aligners for 20 to 22 hours a day, only removing them to eat, drink (anything other than water), brush, and floss.",
     },
     {
-      question: "How do I know if I need a root canal?",
+      question: "Is Invisalign suitable for everyone?",
       answer:
-        "Common signs include severe spontaneous toothache, prolonged sensitivity to heat or cold, swollen or tender gums, and pain when chewing. Please book a consultation immediately if you experience these symptoms.",
+        "Invisalign can treat a wide range of orthodontic issues, from simple teeth straightening to more complex bites. During your consultation, we'll use our 3D scanner to determine if aligners are the perfect fit for your smile goals.",
     }
   ];
 
