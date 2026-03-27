@@ -8,9 +8,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Beaudent Dental Care",
-  description: "Dr. Ankita Nagrani (Endodontist). Located at Baner, Pune. Specialist for endodontic, root canal, and laser dentistry care.",
-  keywords: "Dr. Ankita Nagrani, Endodontist, Beaudent Dental Care, Pune, Root Canal, Laser Dentistry, 3D Scanning",
+  title: "Beaudent Dental Care | Expert Endodontist in Baner, Pune",
+  description: "Dr. Ankita Nagrani (Endodontist), 8-10 Years Experience. Located at ABIL Imperial Commercial Spaces, Baner, Pune. Specialist for painless root canal and laser dentistry.",
+  keywords: "Dr. Ankita Nagrani, Endodontist, Beaudent Dental Care, Baner Pune, Root Canal Specialist, Laser Dentistry Pune, 3D Scanning Dental",
   authors: [{ name: "Dr. Ankita Nagrani" }],
   creator: "Beaudent Dental Care",
   publisher: "Beaudent Dental Care",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Beaudent Dental Care | Expert Endodontist & Laser Dentistry",
-    description: "Dr. Ankita Nagrani - 8-10 Years Experience. Baner, Pune.",
+    description: "Dr. Ankita Nagrani - 8-10 Years Experience. Expert Dental Care in Baner, Pune.",
     url: 'https://beaudent.in/',
     siteName: "Beaudent Dental Care",
     images: [

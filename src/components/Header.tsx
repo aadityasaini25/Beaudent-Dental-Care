@@ -42,7 +42,7 @@ export default function Header({ onBookAppointment }: HeaderProps) {
               className="block text-[11px] leading-tight font-semibold text-gray-700 max-w-[280px] hover:text-[#964782] transition-colors"
             >
               F-18, First Floor, ABIL Imperial Commercial Spaces,<br />
-              Rohan Seher Lane, Baner, Pune – 411045
+              Rohan Seher Lane, Pancard Club Road, Baner, Pune – 411045
             </a>
           </div>
         </div>

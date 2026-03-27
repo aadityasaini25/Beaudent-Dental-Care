@@ -18,7 +18,7 @@ export default function ClinicPhotos({ onBookAppointment }: ClinicPhotosProps) {
         <p className="text-[#5d2350] font-semibold text-sm uppercase tracking-[0.2em] mb-2">Our Facility</p>
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight mb-4">Our Clinic</h2>
         <div className="w-16 h-0.5 bg-[#d4af37] rounded-full mb-4" />
-        <p className="text-gray-600 max-w-xl mb-12">F-18, First Floor, ABIL Imperial Commercial Spaces, Rohan Seher Lane, Pancard Club Road, Baner, Pune.</p>
+        <p className="text-gray-600 max-w-xl mb-12">F-18, First Floor, ABIL Imperial Commercial Spaces, Rohan Seher Lane, Pancard Club Road, Baner, Pune, Maharashtra – 411045. <br/><span className="text-sm font-semibold opacity-70">(Above Durga Cafe / 2M Medico / Jio Life Chemist)</span></p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-16">
           {clinicImages.map((img, i) => (

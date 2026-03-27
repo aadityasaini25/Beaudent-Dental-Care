@@ -34,7 +34,7 @@ export default function Footer() {
             <div className="flex items-start justify-center md:justify-start gap-2 mt-2">
               <span className="text-[#964782] text-lg">🕒</span>
               <div className="text-gray-300 space-y-0.5 text-xs">
-                <p className="font-bold">Mon–Sat</p>
+                <p className="font-bold text-[#964782]">Monday to Saturday</p>
                 <p>10:00 AM – 8:00 PM</p>
                 <p className="font-bold mt-1">Sunday</p>
                 <p>Closed</p>
@@ -55,7 +55,8 @@ export default function Footer() {
                 <span className="text-gray-300 leading-relaxed group-hover:text-[#964782] transition-colors">
                   F-18, First Floor, ABIL Imperial Commercial Spaces,<br />
                   Rohan Seher Lane, Pancard Club Road,<br />
-                  Baner, Pune, Maharashtra – 411045
+                  Baner, Pune, Maharashtra – 411045<br />
+                  <span className="text-[10px] text-gray-400 mt-1 block">(Above Durga Cafe / 2M Medico / Jio Life Chemist)</span>
                 </span>
               </div>
             </a>
