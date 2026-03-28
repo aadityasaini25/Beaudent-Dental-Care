@@ -1,72 +1,72 @@
 export default function ServiceHighlights() {
   const serviceData = [
     {
-      title: "Root Canal Treatment",
-      image: "/images/ortho/root_canal_3d.png",
+      title: "Dental Implants",
+      image: "/images/implant/single.png",
       description:
-        "Single-visit painless root canal therapy using advanced rotary endodontics and 3D precision.",
+        "Single, multiple and full-arch implants planned digitally for precise placement and natural-looking results.",
       benefits: [
-        "Painless & fast treatment",
-        "Preserves natural tooth structure",
-        "Advanced 3D imaging integration",
-        "Prevents severe infections",
+        "Single & multiple tooth implants",
+        "All-on-4 / All-on-6 full-arch options",
+        "Immediate implants (where indicated)",
+        "Implant-supported crowns and bridges",
       ],
     },
     {
-      title: "Re-Root Canal Treatment",
-      image: "/images/ortho/re_root_canal_3d.png",
+      title: "Full Mouth Rehabilitation",
+      image: "/images/implant/Multiple.png",
       description:
-        "Expert revision of failed or complex root canals using microscopic endodontic techniques for high success rate with advanced technology.",
+        "Prosthetic-driven, occlusion-focused rehabilitation for worn, missing or failing teeth, often supported by implants.",
       benefits: [
-        "Resolves persistent pain",
-        "State-of-the-art sterilization",
-        "Expert endodontic handling",
-        "High success rate",
+        "Comprehensive occlusal analysis",
+        "Smile correction & functional redesign",
+        "Implant-supported full mouth reconstruction",
+        "Digitally designed prosthetic outcomes",
       ],
     },
     {
-      title: "Laser Dentistry",
-      image: "/images/ortho/laser_dentistry_3d.png",
+      title: "Supporting Surgical Procedures",
+      image: "/images/implant/all_in.png",
       description:
-        "Minimally invasive laser treatments for gums, root canals, and teeth whitening with superior comfort.",
+        "Procedures that prepare and support implant and restorative care, delivered with a focus on comfort and safety.",
       benefits: [
-        "No drills or needles needed",
-        "Faster healing and recovery",
-        "Reduced bleeding & swelling",
-        "Highly precise treatments",
+        "Surgical extractions & minor oral surgery",
+        "Bone grafting and site development",
+        "Soft tissue management",
+        "Careful post-operative follow-up",
       ],
     },
     {
-      title: "Oral Surgery",
-      image: "/images/ortho/oral_surgery_3d.png",
+      title: "Cosmetic & Restorative Dentistry",
+      image: "/images/implant/supported.png",
       description:
-        "Safe and painless minor oral surgeries including precise wisdom tooth extractions.",
+        "Restorative and aesthetic dentistry to complete your treatment plan and harmonise your smile with your new implants.",
       benefits: [
-        "Painless extractions",
-        "Expert surgical care",
-        "Wisdom teeth removal",
-        "Fast recovery protocols",
+        "Ceramic crowns and bridges",
+        "Smile enhancement and contouring",
+        "Tooth-coloured restorations",
+        "Long-term maintenance planning",
       ],
     },
   ];
 
   return (
-    <section className="relative bg-[#301b2a] text-white py-20 md:py-28 px-4 md:px-8 lg:px-12">
+    <section className="relative bg-[#0a0c10] text-white py-20 md:py-28 px-4 md:px-8 lg:px-12">
       <div className="max-w-7xl mx-auto">
-        <p className="text-[#964782] font-semibold text-sm uppercase tracking-[0.2em] mb-2">Our Services</p>
+        <p className="text-[#c2a05d] font-semibold text-sm uppercase tracking-[0.2em] mb-2">Our Services</p>
         <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white mb-4">
-          Advanced Endodontics & Laser Dentistry
+          Surgical & Implant Care
         </h2>
-        <div className="w-16 h-0.5 bg-[#964782] rounded-full mb-4" />
+        <div className="w-16 h-0.5 bg-[#c2a05d] rounded-full mb-4" />
         <p className="text-gray-300 max-w-2xl mb-14">
-          From painless root canals to advanced oral surgeries — we specialize in preserving your natural smile using state-of-the-art microscopic and laser technology.
+          From single implants to full mouth rehabilitation and corrective jaw surgery — all under one roof, with a fully digital workflow.
         </p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {serviceData.map((service, index) => (
             <div
               key={index}
-              className={`bg-white/5 border border-white/10 p-6 rounded-[28px] flex flex-col hover:border-[#964782]/50 hover:bg-white/10 transition-all duration-500 hover-lift fade-up stagger-${index + 1} group border-beam`}
+              className={`bg-white/5 border border-white/10 p-6 rounded-[28px] flex flex-col hover:border-[#c2a05d]/50 hover:bg-white/10 transition-all duration-500 hover-lift fade-up stagger-${index + 1} group border-beam`}
             >
               <div className="relative rounded-2xl mb-6 aspect-[4/3] flex items-center justify-center overflow-hidden bg-white/5 border border-slate-600/30 p-4 shadow-inner">
                 <img
@@ -74,14 +74,14 @@ export default function ServiceHighlights() {
                   alt={service.title}
                   className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-tr from-[#964782]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute inset-0 bg-gradient-to-tr from-[#c2a05d]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
-              <h3 className="font-bold mb-3 text-lg text-white group-hover:text-[#964782] transition-colors">{service.title}</h3>
+              <h3 className="font-bold mb-3 text-lg text-white group-hover:text-[#c2a05d] transition-colors">{service.title}</h3>
               <p className="text-[14px] text-gray-400 leading-relaxed mb-6 flex-grow">{service.description}</p>
               <ul className="space-y-3 text-[12px] text-slate-300">
                 {service.benefits.map((b, i) => (
                   <li key={i} className="flex items-start gap-2 group/item">
-                    <span className="text-[#964782] mt-1 shrink-0 w-1.5 h-1.5 rounded-full bg-[#964782] group-hover/item:scale-125 transition-transform" />
+                    <span className="text-[#c2a05d] mt-1 shrink-0 w-1.5 h-1.5 rounded-full bg-[#c2a05d] group-hover/item:scale-125 transition-transform" />
                     <span>{b}</span>
                   </li>
                 ))}
