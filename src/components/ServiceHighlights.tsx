@@ -1,91 +1,103 @@
 export default function ServiceHighlights() {
   const serviceData = [
     {
-      title: "Dental Implants",
-      image: "/images/implant/single.png",
+      title: "Invisalign & Clear Aligners",
+      image: "/images/ortho/invisalign_new.png",
       description:
-        "Single, multiple and full-arch implants planned digitally for precise placement and natural-looking results.",
+        "Discreetly straighten your teeth with nearly invisible, removable aligners tailored to your smile.",
       benefits: [
-        "Single & multiple tooth implants",
-        "All-on-4 / All-on-6 full-arch options",
-        "Immediate implants (where indicated)",
-        "Implant-supported crowns and bridges",
+        "Virtually invisible for a confident smile",
+        "Removable for easy eating and oral hygiene",
+        "Smooth, comfortable custom-fit plastic",
+        "Predictable results with advanced 3D mapping",
       ],
     },
     {
-      title: "Full Mouth Rehabilitation",
-      image: "/images/implant/Multiple.png",
+      title: "Traditional Metal Braces",
+      image: "/images/ortho/metal_new.png",
       description:
-        "Prosthetic-driven, occlusion-focused rehabilitation for worn, missing or failing teeth, often supported by implants.",
+        "A highly effective and reliable solution for correcting complex orthodontic and alignment issues.",
       benefits: [
-        "Comprehensive occlusal analysis",
-        "Smile correction & functional redesign",
-        "Implant-supported full mouth reconstruction",
-        "Digitally designed prosthetic outcomes",
+        "Proven results for children, teens, and adults",
+        "Efficiently corrects severe crowding and gaps",
+        "Durable stainless steel construction",
+        "The most cost-effective orthodontic option",
       ],
     },
     {
-      title: "Supporting Surgical Procedures",
-      image: "/images/implant/all_in.png",
+      title: "Ceramic Aesthetic Braces",
+      image: "/images/ortho/ceramic_new.png",
       description:
-        "Procedures that prepare and support implant and restorative care, delivered with a focus on comfort and safety.",
+        "A less noticeable alternative to metal braces, featuring tooth-colored brackets that blend in.",
       benefits: [
-        "Surgical extractions & minor oral surgery",
-        "Bone grafting and site development",
-        "Soft tissue management",
-        "Careful post-operative follow-up",
+        "Blends naturally with your tooth color",
+        "Comfortable, rounded bracket design",
+        "Effective for a wide range of corrections",
+        "Resistant to staining and daily wear",
       ],
     },
     {
-      title: "Cosmetic & Restorative Dentistry",
-      image: "/images/implant/supported.png",
+      title: "Self-Ligating Braces",
+      image: "/images/ortho/self_ligating_new.png",
       description:
-        "Restorative and aesthetic dentistry to complete your treatment plan and harmonise your smile with your new implants.",
+        "Modern orthodontic technology designed for faster treatment times and fewer clinic visits.",
       benefits: [
-        "Ceramic crowns and bridges",
-        "Smile enhancement and contouring",
-        "Tooth-coloured restorations",
-        "Long-term maintenance planning",
+        "Faster tooth movement with reduced friction",
+        "Easier to clean without elastic ties",
+        "Fewer office visits and adjustments needed",
+        "Gentler pressure for enhanced comfort",
       ],
     },
   ];
 
   return (
-    <section className="relative bg-[#0a0c10] text-white py-20 md:py-28 px-4 md:px-8 lg:px-12">
-      <div className="max-w-7xl mx-auto">
-        <p className="text-[#c2a05d] font-semibold text-sm uppercase tracking-[0.2em] mb-2">Our Services</p>
-        <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white mb-4">
-          Surgical & Implant Care
+    <section className="relative bg-[#0a0c10] text-white py-20 md:py-32 px-4 md:px-8 lg:px-12 overflow-hidden">
+      <div className="max-w-4xl mx-auto text-center mb-20 md:mb-24">
+        <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white mb-6">
+          Specialized <span className="text-[#964782]">Orthodontic Care</span>
         </h2>
-        <div className="w-16 h-0.5 bg-[#c2a05d] rounded-full mb-4" />
-        <p className="text-gray-300 max-w-2xl mb-14">
-          From single implants to full mouth rehabilitation and corrective jaw surgery — all under one roof, with a fully digital workflow.
+        <div className="w-24 h-[2px] bg-[#964782] rounded-full mx-auto mb-10" />
+        <p className="text-gray-400 max-w-3xl mx-auto text-base md:text-lg leading-relaxed font-light">
+          MDS Orthodontist, Aligner Specialist & Invisalign Certified Provider. <br className="hidden md:block" /> Expert care led by Dr. Purna Sri in Gurgaon.
         </p>
+      </div>
 
+      <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {serviceData.map((service, index) => (
             <div
               key={index}
-              className={`bg-white/5 border border-white/10 p-6 rounded-[28px] flex flex-col hover:border-[#c2a05d]/50 hover:bg-white/10 transition-all duration-500 hover-lift fade-up stagger-${index + 1} group border-beam`}
+              className={`bg-white/[0.02] border border-white/10 p-7 rounded-[32px] flex flex-col hover:border-[#964782]/40 hover:bg-white/[0.04] transition-all duration-700 hover-lift fade-up stagger-${index + 1} group border-beam cursor-default shadow-2xl relative overflow-hidden`}
             >
-              <div className="relative rounded-2xl mb-6 aspect-[4/3] flex items-center justify-center overflow-hidden bg-white/5 border border-slate-600/30 p-4 shadow-inner">
+              {/* Image Area */}
+              <div className="relative rounded-2xl mb-8 aspect-[4/3] flex items-center justify-center overflow-hidden bg-black/20 border border-white/5 p-1 shadow-2xl">
                 <img
                   src={service.image}
                   alt={service.title}
-                  className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110"
+                  className="w-full h-full object-cover rounded-xl transition-transform duration-1000 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-tr from-[#c2a05d]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute inset-0 bg-gradient-to-tr from-[#964782]/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
               </div>
-              <h3 className="font-bold mb-3 text-lg text-white group-hover:text-[#c2a05d] transition-colors">{service.title}</h3>
-              <p className="text-[14px] text-gray-400 leading-relaxed mb-6 flex-grow">{service.description}</p>
-              <ul className="space-y-3 text-[12px] text-slate-300">
-                {service.benefits.map((b, i) => (
-                  <li key={i} className="flex items-start gap-2 group/item">
-                    <span className="text-[#c2a05d] mt-1 shrink-0 w-1.5 h-1.5 rounded-full bg-[#c2a05d] group-hover/item:scale-125 transition-transform" />
-                    <span>{b}</span>
-                  </li>
-                ))}
-              </ul>
+
+              {/* Text Area */}
+              <div className="flex flex-col flex-grow items-center text-center px-2">
+                <h3 className="font-bold mb-6 text-xl text-white group-hover:text-[#964782] transition-colors leading-tight min-h-[3rem] flex items-center">
+                  {service.title}
+                </h3>
+                <p className="text-[14px] text-gray-400 leading-relaxed mb-10 min-h-[4.5rem] font-light">
+                  {service.description}
+                </p>
+                
+                {/* Benefits List */}
+                <ul className="space-y-4 text-[13px] text-gray-300 w-full text-left">
+                  {service.benefits.map((b, i) => (
+                    <li key={i} className="flex items-start gap-3 group/item">
+                      <span className="text-yellow-500 mt-1 shrink-0 text-[10px]">✦</span>
+                      <span className="leading-snug font-light">{b}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           ))}
         </div>

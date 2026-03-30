@@ -26,6 +26,7 @@ export default function TransformingSmiles({ onBookAppointment }: TransformingSm
                       alt={`Before Smile ${i}`}
                       fill
                       className="object-contain rounded-lg"
+                      sizes="(max-width: 768px) 100vw, 50vw"
                     />
                   </div>
                 </div>
@@ -39,6 +40,7 @@ export default function TransformingSmiles({ onBookAppointment }: TransformingSm
                       alt={`After Smile ${i}`}
                       fill
                       className="object-contain rounded-lg"
+                      sizes="(max-width: 768px) 100vw, 50vw"
                     />
                   </div>
                 </div>

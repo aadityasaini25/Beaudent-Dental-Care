@@ -23,6 +23,7 @@ export default function ThankYouPage() {
                 alt="Dr. Ankita Nagrani"
                 fill
                 className="object-cover object-top"
+                sizes="(max-width: 768px) 100vw, 200px"
               />
             </div>
             <div className="text-center md:text-left">
