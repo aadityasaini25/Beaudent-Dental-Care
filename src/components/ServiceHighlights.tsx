@@ -37,15 +37,15 @@ export default function ServiceHighlights() {
       ],
     },
     {
-      title: "Self-Ligating Braces",
-      image: "/images/ortho/self_ligating_new.png",
+      title: "Advanced Dental Implants",
+      image: "/images/ortho/dental_implant_3d.png",
       description:
-        "Modern orthodontic technology designed for faster treatment times and fewer clinic visits.",
+        "A permanent and natural-looking solution for replacing missing teeth with medical-grade titanium posts.",
       benefits: [
-        "Faster tooth movement with reduced friction",
-        "Easier to clean without elastic ties",
-        "Fewer office visits and adjustments needed",
-        "Gentler pressure for enhanced comfort",
+        "Fused naturally with your jawbone",
+        "Feels and functions like real teeth",
+        "Prevents facial bone loss and aging",
+        "Designed for lifetime durability",
       ],
     },
   ];
@@ -54,11 +54,11 @@ export default function ServiceHighlights() {
     <section className="relative bg-[#0a0c10] text-white py-20 md:py-32 px-4 md:px-8 lg:px-12 overflow-hidden">
       <div className="max-w-4xl mx-auto text-center mb-20 md:mb-24">
         <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white mb-6">
-          Specialized <span className="text-[#964782]">Orthodontic Care</span>
+          Specialized <span className="text-[#964782]">Dental Treatments</span>
         </h2>
         <div className="w-24 h-[2px] bg-[#964782] rounded-full mx-auto mb-10" />
         <p className="text-gray-400 max-w-3xl mx-auto text-base md:text-lg leading-relaxed font-light">
-          MDS Orthodontist, Aligner Specialist & Invisalign Certified Provider. <br className="hidden md:block" /> Expert care led by Dr. Purna Sri in Gurgaon.
+          Premium care including Orthodontics, Aligners & Dental Implants. <br className="hidden md:block" /> Expert care led by our team of MDS specialists in Gurgaon.
         </p>
       </div>
 
