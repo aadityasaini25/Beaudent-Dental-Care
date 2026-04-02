@@ -64,7 +64,14 @@ export default function OfferSection({ onBookAppointment }: OfferSectionProps) {
               </div>
 
               <div className="flex-1 relative w-full max-w-sm lg:max-w-none">
-                <div className="relative rounded-[2.5rem] overflow-hidden aspect-square shadow-[0_20px_50px_rgba(0,0,0,0.1)] rotate-3 group-hover:rotate-0 transition-transform duration-700">
+                <div className="relative rounded-[3rem] overflow-hidden aspect-[4/5] md:aspect-square shadow-[0_20px_60px_rgba(0,0,0,0.15)] group-hover:shadow-[0_30px_80px_rgba(150,71,130,0.2)] transition-all duration-700">
+                  {/* Top Badge */}
+                  <div className="absolute top-6 right-6 z-20">
+                    <div className="bg-gradient-to-r from-[#964782] to-[#B85C9D] text-white px-5 py-2.5 rounded-full text-sm font-black tracking-wider shadow-[0_8px_25px_rgba(150,71,130,0.4)] transform hover:scale-105 transition-transform">
+                      UP TO 20% OFF
+                    </div>
+                  </div>
+
                   <img 
                     src="/images/promo/invisalign_promo.png" 
                     alt="Invisalign Treatment" 
@@ -73,24 +80,31 @@ export default function OfferSection({ onBookAppointment }: OfferSectionProps) {
                       (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&q=80&w=800';
                     }}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-8">
-                    <div className="text-white">
-                      <p className="font-bold text-2xl mb-2">3D Smile Scan</p>
-                      <p className="text-white/90 text-sm font-light">Included with Invisalign treatment</p>
+                  
+                  {/* Main Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-8 md:p-10">
+                    <div className="space-y-1 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
+                      <p className="text-white font-black text-3xl md:text-4xl tracking-tight leading-tight">
+                        3D Smile Scan
+                      </p>
+                      <p className="text-white/95 text-lg font-semibold flex items-center gap-2">
+                        <span className="text-pink-300">FREE</span>
+                        <span className="text-sm font-medium opacity-90">with Invisalign Treatment</span>
+                      </p>
+                      
+                      {/* Refined Bottom Tag */}
+                      <div className="pt-4">
+                        <div className="inline-flex items-center bg-white/95 backdrop-blur-md px-4 py-1.5 rounded-xl shadow-[0_8px_20px_rgba(0,0,0,0.1)] border border-white/20">
+                          <span className="text-gray-900 font-bold text-sm tracking-tight">Worth ₹5000</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                
-                {/* Float elements */}
-                <div className="absolute -top-6 -left-6 bg-white px-5 py-3 rounded-2xl shadow-[0_10px_30px_rgba(150,71,130,0.15)] border border-pink-50 animate-bounce-slow">
-                  <span className="text-[#964782] font-black text-xl tracking-tight">UP TO 20% OFF</span>
-                </div>
-                <div className="absolute -bottom-6 -right-6 bg-white px-5 py-3 rounded-2xl shadow-[0_10px_30px_rgba(0,128,128,0.1)] border border-teal-50 animate-bounce">
-                  <span className="text-teal-600 font-bold text-lg">Worth ₹5000</span>
-                </div>
 
-                <p className="absolute -bottom-16 left-0 right-0 text-[11px] text-gray-400 font-medium italic text-center lg:text-left">
-                  *Free 3D Smile Scan is applicable only with Invisalign treatment booking
+                {/* Small Disclaimer */}
+                <p className="mt-6 text-[11px] text-gray-400 font-medium italic text-right lg:text-left opacity-80">
+                  *Free scan applicable only with Invisalign treatment booking
                 </p>
               </div>
             </div>
