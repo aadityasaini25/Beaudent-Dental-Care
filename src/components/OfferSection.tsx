@@ -6,8 +6,8 @@ interface OfferSectionProps {
 
 export default function OfferSection({ onBookAppointment }: OfferSectionProps) {
   const benefits = [
-    "Up to 30% OFF on Invisalign treatment",
-    "FREE 3D Smile Scan (Worth ₹5000)",
+    "Up to 20% OFF on Invisalign treatment",
+    "Free 3D Smile Scan (Worth ₹5000) with Invisalign treatment",
     "Outcome visualization before starting treatment",
     "Clear, transparent & comfortable aligners",
     "No food restrictions (remove aligners while eating)",
@@ -23,14 +23,14 @@ export default function OfferSection({ onBookAppointment }: OfferSectionProps) {
           <div className="absolute -top-12 -right-12 w-64 h-64 bg-pink-50 rounded-full blur-3xl opacity-60 -z-10" />
           <div className="absolute -bottom-12 -left-12 w-64 h-64 bg-teal-50 rounded-full blur-3xl opacity-60 -z-10" />
 
-          <div className="bg-white rounded-[40px] shadow-2xl shadow-pink-500/5 border border-pink-50 p-8 md:p-16 relative overflow-hidden group hover:shadow-pink-500/10 transition-all duration-700">
+          <div className="bg-white rounded-[40px] shadow-[0_20px_50px_rgba(150,71,130,0.05)] border border-pink-50 p-8 md:p-16 relative overflow-hidden group hover:shadow-[0_20px_50px_rgba(150,71,130,0.1)] transition-all duration-700">
             {/* Animated border beam effect */}
             <div className="absolute inset-0 border-2 border-transparent group-hover:border-[#964782]/10 rounded-[40px] transition-colors duration-700" />
             
             <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
               <div className="flex-1 text-center lg:text-left">
-                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-pink-50 border border-pink-100 mb-6 animate-pulse">
-                  <span className="text-[#964782] text-sm font-bold tracking-widest uppercase">Limited Time Offer</span>
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-pink-50 border border-pink-100 mb-6">
+                  <span className="text-[#964782] text-xs font-bold tracking-widest uppercase">Limited Time Offer</span>
                 </div>
                 
                 <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 tracking-tight leading-tight">
@@ -39,7 +39,7 @@ export default function OfferSection({ onBookAppointment }: OfferSectionProps) {
                 </h2>
                 
                 <p className="text-gray-600 text-lg mb-10 font-light leading-relaxed">
-                  Start your journey to a perfect smile with the world's most advanced clear aligner system at a special promotional price.
+                  Start your journey to a perfect smile with the world’s most advanced clear aligner system at a special promotional price.
                 </p>
 
                 <div className="grid sm:grid-cols-2 lg:grid-cols-1 gap-4 mb-10">
@@ -50,14 +50,21 @@ export default function OfferSection({ onBookAppointment }: OfferSectionProps) {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                         </svg>
                       </div>
-                      <span className="text-gray-700 font-medium text-sm md:text-base">{benefit}</span>
+                      <span className="text-gray-700 font-medium text-sm md:text-base leading-snug">{benefit}</span>
                     </div>
                   ))}
                 </div>
+
+                <button 
+                  onClick={onBookAppointment}
+                  className="bg-[#964782] text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-[#833e72] transition-all transform hover:scale-105 shadow-xl shadow-pink-500/20 active:scale-95"
+                >
+                  Book Appointment
+                </button>
               </div>
 
               <div className="flex-1 relative w-full max-w-sm lg:max-w-none">
-                <div className="relative rounded-3xl overflow-hidden aspect-square shadow-2xl rotate-3 group-hover:rotate-0 transition-transform duration-700">
+                <div className="relative rounded-[2.5rem] overflow-hidden aspect-square shadow-[0_20px_50px_rgba(0,0,0,0.1)] rotate-3 group-hover:rotate-0 transition-transform duration-700">
                   <img 
                     src="/images/promo/invisalign_promo.png" 
                     alt="Invisalign Treatment" 
@@ -66,21 +73,25 @@ export default function OfferSection({ onBookAppointment }: OfferSectionProps) {
                       (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&q=80&w=800';
                     }}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-8">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-8">
                     <div className="text-white">
-                      <p className="font-bold text-2xl mb-1">3D Smile Scan</p>
-                      <p className="text-white/80 text-sm">Visualize your future smile in seconds</p>
+                      <p className="font-bold text-2xl mb-2">3D Smile Scan</p>
+                      <p className="text-white/90 text-sm font-light">Included with Invisalign treatment</p>
                     </div>
                   </div>
                 </div>
                 
                 {/* Float elements */}
-                <div className="absolute -top-6 -left-6 bg-white p-4 rounded-2xl shadow-xl border border-pink-50 animate-bounce-slow">
-                  <span className="text-[#964782] font-black text-2xl">30% OFF</span>
+                <div className="absolute -top-6 -left-6 bg-white px-5 py-3 rounded-2xl shadow-[0_10px_30px_rgba(150,71,130,0.15)] border border-pink-50 animate-bounce-slow">
+                  <span className="text-[#964782] font-black text-xl tracking-tight">UP TO 20% OFF</span>
                 </div>
-                <div className="absolute -bottom-6 -right-6 bg-white p-4 rounded-2xl shadow-xl border border-teal-50 animate-bounce">
-                  <span className="text-teal-600 font-bold text-sm">Value ₹5000</span>
+                <div className="absolute -bottom-6 -right-6 bg-white px-5 py-3 rounded-2xl shadow-[0_10px_30px_rgba(0,128,128,0.1)] border border-teal-50 animate-bounce">
+                  <span className="text-teal-600 font-bold text-lg">Worth ₹5000</span>
                 </div>
+
+                <p className="absolute -bottom-16 left-0 right-0 text-[11px] text-gray-400 font-medium italic text-center lg:text-left">
+                  *Free 3D Smile Scan is applicable only with Invisalign treatment booking
+                </p>
               </div>
             </div>
           </div>
