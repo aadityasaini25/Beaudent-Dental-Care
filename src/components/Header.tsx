@@ -50,8 +50,8 @@ export default function Header({ onBookAppointment }: HeaderProps) {
         <div className="flex items-center gap-4 md:gap-8">
           <div className="hidden sm:block text-right">
             <p className="text-[10px] uppercase tracking-[0.2em] font-bold text-gray-400 mb-0.5">Call Specialist</p>
-            <a href="tel:+918788469535" className="text-sm font-bold text-[#5d2350] hover:text-[#964782] transition-colors">
-              +91 87884 69535
+            <a href="tel:+918788305936" className="text-sm font-bold text-[#5d2350] hover:text-[#964782] transition-colors">
+              +91 87883 05936
             </a>
           </div>
           <button

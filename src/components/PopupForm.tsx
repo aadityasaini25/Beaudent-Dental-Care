@@ -44,7 +44,7 @@ export default function PopupForm({ isOpen, onClose, minutes, seconds }: PopupFo
       onClose();
       router.push('/thank-you');
     } catch (error) {
-      alert('Something went wrong. Please call us at +91 87884 69535 to book.');
+      alert('Something went wrong. Please call us at +91 87883 05936 to book.');
     } finally {
       setIsSubmitting(false);
     }

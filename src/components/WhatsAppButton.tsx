@@ -3,7 +3,7 @@
 import { MessageCircle } from 'lucide-react';
 
 export default function WhatsAppButton() {
-  const phoneNumber = "+918788469535";
+  const phoneNumber = "+918788305936";
   const message = "Hello! I would like to book an appointment at Beaudent Dental Care.";
 
   const handleClick = () => {

@@ -71,10 +71,10 @@ export default function BeforeAfterGallery({ onBookAppointment }: BeforeAfterGal
               Book Consultation
             </button>
             <a
-              href="tel:+918788469535"
+              href="tel:+918788305936"
               className="bg-[#301b2a] text-white px-8 py-3 rounded-lg font-bold text-lg hover:bg-[#1f111b] transition-colors text-center"
             >
-              Call Now: +91 87884 69535
+              Call Now: +91 87883 05936
             </a>
           </div>
           <p className="text-sm text-gray-500 mt-4">

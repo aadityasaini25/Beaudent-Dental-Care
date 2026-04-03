@@ -58,7 +58,7 @@ export default function ServiceHighlights() {
         </h2>
         <div className="w-24 h-[2px] bg-[#964782] rounded-full mx-auto mb-10" />
         <p className="text-gray-400 max-w-3xl mx-auto text-base md:text-lg leading-relaxed font-light">
-          Premium care including Orthodontics, Aligners & Dental Implants. <br className="hidden md:block" /> Expert care led by our team of MDS specialists in Gurgaon.
+          Premium care including Orthodontics, Aligners & Dental Implants. <br className="hidden md:block" /> Expert care led by our team of MDS specialists in Pune.
         </p>
       </div>
 

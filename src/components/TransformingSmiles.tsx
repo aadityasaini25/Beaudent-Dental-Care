@@ -22,7 +22,12 @@ export default function TransformingSmiles({ onBookAppointment }: TransformingSm
                 <div className="bg-white rounded-xl p-2 w-full">
                   <div className="relative w-full min-h-[160px] md:min-h-[192px] max-h-[400px]">
                     <Image
-                      src={`/images/results/${i}before.png`}
+                      src={
+                        i === 1 ? `/img/before-after/before1.jpg` :
+                        i === 2 ? `/img/before-after/b2.jpg` :
+                        i === 3 ? `/img/before-after/b3.jpg` :
+                        `/img/before-after/before4.jpg`
+                      }
                       alt={`Before Smile ${i}`}
                       fill
                       className="object-contain rounded-lg"
@@ -36,7 +41,12 @@ export default function TransformingSmiles({ onBookAppointment }: TransformingSm
                 <div className="bg-white rounded-xl p-2 w-full">
                   <div className="relative w-full min-h-[160px] md:min-h-[192px] max-h-[400px]">
                     <Image
-                      src={`/images/results/${i}after.png`}
+                      src={
+                        i === 1 ? `/img/before-after/after1.jpg` :
+                        i === 2 ? `/img/before-after/a2.jpg` :
+                        i === 3 ? `/img/before-after/a3.jpg` :
+                        `/img/before-after/after4.jpg`
+                      }
                       alt={`After Smile ${i}`}
                       fill
                       className="object-contain rounded-lg"

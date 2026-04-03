@@ -93,10 +93,10 @@ export default function HeroSection({ onBookAppointment }: HeroSectionProps) {
           Book Free Smile Scan
         </button>
         <a
-          href="tel:+918788469535"
+          href="tel:+918788305936"
           className="bg-white text-[#964782] border-2 border-[#964782]/30 py-4 px-12 rounded-2xl font-bold text-lg text-center hover:bg-pink-50 transition-all hover:scale-105 active:scale-95 md:min-w-[240px]"
         >
-          Call +91 87884 69535
+          Call +91 87883 05936
         </a>
       </div>
     </section>

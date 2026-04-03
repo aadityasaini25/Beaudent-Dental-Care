@@ -47,7 +47,7 @@ export default function StickyCTA({ isVisible, onBookAppointment }: StickyCtaPro
             Book Appointment
           </button>
           <a
-            href="tel:+918788469535"
+            href="tel:+918788305936"
             className="hidden sm:flex items-center justify-center bg-white text-[#5d2350] border-2 border-pink-100 px-6 py-3.5 rounded-full font-bold text-sm hover:bg-pink-50 transition-colors"
           >
             📞
