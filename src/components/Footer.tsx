@@ -23,7 +23,7 @@ export default function Footer() {
             <h3 className="font-bold text-white text-base border-b border-gray-800 pb-1">Contact Us</h3>
             <div className="space-y-1 mt-2">
               <a href="tel:+918788305936" className="block text-[#964782] font-bold text-lg hover:scale-105 transition-transform inline-block">+91 87883 05936</a>
-              <p className="text-gray-300 font-medium text-xs">Beaudent Dental Care</p>
+
               <p className="text-gray-300 font-medium text-xs">Beaudent Dental Care</p>
               <a href="mailto:drankitanagrani@gmail.com" className="text-xs hover:text-[#964782] transition-colors block">drankitanagrani@gmail.com</a>
             </div>
